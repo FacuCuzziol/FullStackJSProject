@@ -1,0 +1,22 @@
+{
+  "name": "fullstack-api",
+  "version": "1.0.0",
+  "description": "Backend in Mongo and Express",
+  "main": "index.js",
+  "scripts": {
+    "dev" : "nodemon ./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FacuCuzziol/FullStackJSProject.git"
+  },
+  "author": "Facu Cuzziol",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FacuCuzziol/FullStackJSProject/issues"
+  },
+  "homepage": "https://github.com/FacuCuzziol/FullStackJSProject#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}
