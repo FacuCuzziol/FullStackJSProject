@@ -45,6 +45,17 @@ exports.obtenerPaciente = async (req,res,next) =>{
     }
 }
 
+exports.obtenerPacienteNombre = async(req,res,next) =>{
+    try {
+        const paciente = await Paciente.findById(req.params.name);
+        res.json(paciente);
+    } catch (error) {
+        console.log(error);
+        next();
+    }
+}
+
+
 
 //update a register with an id
 

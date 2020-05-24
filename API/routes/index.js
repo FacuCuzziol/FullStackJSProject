@@ -13,6 +13,9 @@ module.exports = function() {
         pacienteController.obtenerPacientes
     );
 
+    router.get('/pacientes/:name',
+        pacienteController.obtenerPacienteNombre
+    );
 
     //get one patient
 
@@ -33,6 +36,8 @@ module.exports = function() {
     router.delete('/pacientes/:id',
         pacienteController.eliminarPaciente
     )
+
+
 
     return router;
 }
