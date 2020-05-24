@@ -45,11 +45,21 @@ exports.obtenerPaciente = async (req,res,next) =>{
     }
 }
 
+//Este es el nuevo metodo. Mi contribucion al repo de Facundo es 
+//solo añadir comentarios explicando
+//un export permite a un programa utilizar la funcionalidad de este
+//archivo
 exports.obtenerPacienteNombre = async(req,res,next) =>{
+//req es la request que el servidor recibe
+//res es la respuesta que devolvemos
+//next permite continuar la ejecucion del programa frente a algun error    
     try {
+        // creamos un objeto paciente, y buscamos por nombre en la base mongodb 
         const paciente = await Paciente.findById(req.params.name);
+        //devolvemos la info al usuario
         res.json(paciente);
     } catch (error) {
+        //si hay un error mostrarlo por consola
         console.log(error);
         next();
     }
