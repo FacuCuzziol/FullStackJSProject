@@ -31,6 +31,7 @@ const corsOptions = {
 app.use(cors());
 
 mongoose.Promise = global.Promise;
+// database connection 
 mongoose.connect('mongodb://localhost/veterinaria',{
     useNewUrlParser: true,
     useUnifiedTopology: true,
